@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciRet-Aboutus</title>
+    <link rel="stylesheet" type="text/css" href="#">
+
+      <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+    .logo {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+
+      <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#">SciRet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Aboutus.html">About SciRet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Find Your Matching
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">School</a></li>
+              <li><a class="dropdown-item" href="#">College</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Honors</a></li>
+              <li><a class="dropdown-item" href="#">Masters</a></li>
+              <li><a class="dropdown-item" href="#">PHD</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main class="book  mt-1">
+        <div class="nsu_logo_left">
+            <img src="./Assests/nsu.png" alt="nsu logo">
+        </div>
+            <div class="heading_description">
+            <h1> SciRet : Scientific Information Made Easy<br> 
+                     For General Public
+            </h1>
+            <h3>Kasarul Anas Opurbo, Ahsanuzzaman Shaad, Rofiqul Alam Shehab</h3>
+            <h3>Supervisor: Dr. Mohammad Ashrafuzzaman Khan</h3>
+            <h3>Department of Electrical and Computer Engineering, North South University</h3> </div> 
+            <div class="nsu_logo_right">
+                <img src="./Assests/nsu.png" alt="nsu logo">
+            </div>
+    </main>
+       
+
+       
+
+        <tbody class="content">
+    
+            <table>
+                <div class="abstract"> 
+                   <h1>Abstract </h1> 
+                <p>
+                    The scarcity of authentic information has always been a major
+                    inconvenience. Very few of us have access to authentic information and
+                    guidelines. To solve this problem, We made SciRet, a Generative QA
+                    system that retrieves data from datasets consisting of scientific research
+                    papers to provide authentic and informative information to the general
+                    public. To build this system and test it, we took a document of 1,000,000
+                    Corona Virus related literature, made accessible through the “Coronavirus
+                    Open Research Dataset Challenge (CORD-19)”. Upon retrieving the data
+                    successfully, our QA System generates accurate, informative & simple
+                    answers to user's queries. We hope that our system will help a lot of people,
+                    as authentic information is very significant and can help everyone
+                </p>
+            
+            </table>
+        </div>
+        <div class="Introduction1"> 
+            <h1>Introduction </h1> 
+         <p>
+            SciRet is a system that will retrieve authentic and informative data from a
+            dataset of scientific research papers, simplify them for the sake of general
+            people’s understanding, and provide one or multiple accurate answers to a
+            user’s query. We are using a fine-tuned RAG model as a retriever and a
+            GPT-3 model as a generator. After retrieving the data from the dataset, our
+            generator will simplify the data so that the mass population can understand
+            it, and provide answers in 3 difficulty levels - (i) General, (ii) Intermediate &
+            (iii) Expert, so that people from any background can get an answer that can
+            be helpful. Scientific research papers have always been a great source of
+            information, but its often of no help to mass population for its complexity and
+            scarcity. We are hopeful that our system will bring a solution to this problem.
+         </p>
+     
+     </table>
+ </div>
+
+ <div class="Dataset2"> 
+    <h1>Dataset </h1> 
+ <p>
+    In response to the COVID-19 pandemic, the White House and a coalition of
+    leading research groups have prepared the COVID-19 Open Research
+    Dataset (CORD-19). CORD-19 is a resource of over 1,000,000 scholarly
+    articles, including over 400,000 with full text, about COVID-19, SARS-CoV2, and related coronaviruses. This freely available dataset is provided to the
+    global research community to apply recent advances in natural language
+    processing and other AI techniques to generate new insights in support. We
+    choose this dataset as this is an ongoing issue and authentic information
+    regarding this are still very rare.
+ </p>
+
+</table>
+</div>
+
+<div class="Acknowledgement3"> 
+    <h1>Acknowledgement</h1> 
+ <p>
+    First of all, we wish to express our gratitude to our faculty advisor Dr.
+    Mohammad Ashrafuzzaman Khan, who expertly guided us in our project
+    throughout the whole CSE499. Sir had discussions with us regarding our
+    project on a regular basis. We have completed this project under his
+    guidance and supervision. Also, our gratitude is divine to the North South
+    University, ECE department for providing us a good environment to work in.
+ </p>
+
+</table>
+</div>
+<div class="System_diagram4"> 
+    <h1>System Architecture </h1> 
+ <img src="./Assests/system.png" alt="">
+
+</table>
+</div>
+
+        </div>
+
+                <div class="right_PART">
+                        <div class="Result"> 
+                            <h1>Result </h1> 
+                        <img src="./Assests/Picture1.png" alt="">
+                        <img src="./Assests/Picture2.png" alt="">
+                        
+                        </table>
+                        </div>
+                        
+                        <div class="Result_Discussion"> 
+                            <h1>Result Discussion </h1> 
+                        <p>
+                            By far our system could successfully detect passages based on Given query by
+            users and rank them using cosine similarity function. Though our system don't
+            work fine in terms of unique words or question, but it works great when the
+            situation is to detect passages that have similar kinds of information.
+                        </p>
+                        
+                        </table>
+                        </div>
+                        <div class="Project_impact"> 
+                            <h1>Project impact </h1> 
+                        <p>
+                            The way we see it, the current state of our model is just the beginning. As it’s a
+                            Generative QA model, it can be used in Chatbots, Question Answering
+                            Systems, Guideline systems, Information poles, Governmental Information
+                            sites, educational websites and lots which can generate revenue along with
+                            helping mass people. Just by changing the data frame and keeping the model
+                            intact, this can be used as a QA system for any topic. If we face another
+                            pandemic in any time soon, this model will be ready to use as soon as we have
+                            a new dataset of information in hand.
+                        </p>
+                        
+                        </table>
+                        </div>
+                        <div class="Conclusion"> 
+                            <h1>Conclusion </h1> 
+                        <p>
+                            Our main goal was to retrieve and generate informative data, our QA
+                            System is very capable of doing it already. Now, we are trying to make
+                            the retriever more accurate to generate better embedding and retrieve
+                            more accurately and make the generator capable of generating longer
+                            and more informative answers.
+                        </p>
+                        
+                        </table>
+                        </div>
+                    </div>
+    </tbody>
+                
+
+</body>
+</html>

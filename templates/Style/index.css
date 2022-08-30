@@ -1,0 +1,132 @@
+
+
+.book{
+    position: relative;
+    background-color:cadetblue;
+    height: 370px;
+}
+
+.nsu_logo_left{
+    position: relative;
+    bottom:-10%;
+    padding-left: 20px;
+}
+
+.heading_description{
+    position: relative;
+    margin-left: 25%;
+    top: -250px;
+}
+.heading_description h1{
+
+ text-decoration-color: aliceblue;
+}
+
+.nsu_logo_right{
+    position: relative;
+    margin-left: 80%;
+    
+   
+    top: -500px;
+}
+tbody.content{
+    height: 100%;
+    width: 100%;
+}
+
+div.abstract{
+    position: relative;
+    height: 100%;
+    width: 46%; 
+    top:5px; 
+    padding: 10px;
+    border:1.5px solid cadetblue;
+    text-align: justify;
+}
+div.Introduction1{
+    position: relative;
+    height: 100%;
+    width: 46%; 
+    top:10px; 
+    padding: 10px;
+    border:1.5px solid cadetblue; 
+    text-align: justify;
+}
+div.Dataset2{
+    position: relative;
+    height: 100%;
+    width: 46%; 
+    top:15px; 
+    padding: 10px;
+    border:1.5px solid cadetblue;
+    text-align: justify;
+}
+
+div.Acknowledgement3{
+    position: relative;
+    height: 100%;
+    width: 46%; 
+    top:20px; 
+    padding: 10px;
+    border:1.5px solid cadetblue;
+    text-align: justify;
+}
+
+div.System_diagram4{
+    position: relative;
+    height: 100%;
+    width: 46%; 
+    top:25px; 
+    padding: 10px;
+    border:1.5px solid cadetblue;
+    text-align: justify;
+}
+div.System_diagram4 img{
+    height: 100%;
+    width: 100%;
+}
+
+div.Result{
+    position: relative;
+    top: -1360px;
+    margin-left: 50%;
+    width: 48.3%; 
+    padding: 10px;
+    border: 1.5px solid cadetblue;
+    text-align: justify;
+}
+
+div.Result img{
+width: 100%;
+}
+
+div.Result_Discussion{
+    position: relative;
+    top: -1355px;
+    margin-left: 50%;
+    width: 48.3%; 
+    padding: 10px;
+    border: 1.5px solid cadetblue;
+    text-align: justify;
+}
+
+div.Project_impact{
+    position: relative;
+    top: -1350px;
+    margin-left: 50%;
+    width: 48.3%; 
+    padding: 10px;
+    border: 1.5px solid cadetblue;
+    text-align: justify;
+}
+
+div.Conclusion{
+    position: relative;
+    top: -1345px;
+    margin-left: 50%;
+    width: 48.3%; 
+    padding: 10px;
+    border: 1.5px solid cadetblue;
+    text-align: justify;
+}
+

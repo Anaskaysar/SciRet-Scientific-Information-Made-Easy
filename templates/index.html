@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciRet</title>
+
+  <!-- Bootstrap Cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Fonts  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <style>
+    .logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="{{url_for('Home')}}">SciRet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ url_for('About') }}">About SciRet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Find Your Matching
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">School</a></li>
+              <li><a class="dropdown-item" href="#">College</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Honors</a></li>
+              <li><a class="dropdown-item" href="#">Masters</a></li>
+              <li><a class="dropdown-item" href="#">PHD</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-2 border border-primary mt-2 p-2">
+    <!-- Project Heading -->
+    <figure class="text-center border border-dark mt-2">
+      <blockquote class="blockquote mt-2">
+        <h1>SciRet : Scientific Information Made Easy
+          for General Public
+        </h1>
+      </blockquote>
+      <h5>By</h5>
+      <blockquote class="blockquote mt-2">
+        <p>
+          Kaysarul Anas Apurba, Md. Ahsanuzzaman, Rofiqul Alam Shehab
+        </p>
+      </blockquote>
+
+    </figure>
+
+    <!-- Input Box From user -->
+
+    <div class="text-center border border-dark mt-2">
+      <div class="form-outline p-5">
+        <label class="form-label" for="formTextExample1">Enter Your Query Here</label>
+        <form action="{{url_for('predict')}}" method="POST">
+          <input type="text" id="query" name="query" required="required" class="form-control" />
+          <button type="submit" id="sub" class="btn btn-primary btn-lg mt-2">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Question CheckBox  -->
+    <div class="border border-dark mt-2 p-2" >
+      <h3 class="font-weight-bold "> <span class="text-danger">Question: </span>{{ question }}</h3>
+    </div>
+
+    <!-- Output  -->
+    <div class="border border-dark mt-2 p-2" >
+          <blockquote class="blockquote text-center">
+            <h3>Showing Top Three Matched Document With User's Query
+            </h3>
+          </blockquote>
+          <p class="border border-dark p-2">
+            <b>Score</b> : {{ list["documents"][0].to_dict()["score"] }} <br>         
+            <b>Title</b> : {{ list["documents"][0].to_dict()["meta"]["name"] }} <br>
+            <b>Content</b> : {{ list["documents"][0].to_dict()["content"] }}      
+          </p>
+          <p class="border border-dark p-2">
+            <b>Score</b> : {{list["documents"][1].to_dict()["score"]}} <br>         
+            <b>Title</b> : {{list["documents"][1].to_dict()["meta"]["name"]}} <br>
+            <b style="text-justify: auto">Content</b> : {{list["documents"][1].to_dict()["content"]}}      
+          </p>
+          <p class="border border-dark p-2">
+            <b>Score</b> : {{list["documents"][2].to_dict()["score"]}} <br>         
+            <b>Title</b> : {{list["documents"][2].to_dict()["meta"]["name"]}} <br>
+            <b>Content</b> : {{list["documents"][2].to_dict()["content"]}}      
+          </p>
+          <p class="border border-dark p-2">
+            <b>Score</b> : {{list["documents"][3].to_dict()["score"]}} <br>         
+            <b>Title</b> : {{list["documents"][3].to_dict()["meta"]["name"]}} <br>
+            <b>Content</b> : {{list["documents"][3].to_dict()["content"]}}      
+          </p>
+    </div>
+  </main>
+
+
+  <!-- Script  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
